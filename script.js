@@ -65,7 +65,7 @@ function checkWin() {
     const [a, b, c] = combo;
     if (board[a] && board[a] === board[b] && board[a] === board[c]) {
       isGameOver = true;
-      statusEl.textContent = `Player ${board[a]} wins!`;
+      statusEl.textContent = `Player ${board[a]} wins!🎉`;
       highlightWinningCells(combo);
       return;
     }
@@ -73,13 +73,13 @@ function checkWin() {
 /* Created By kalpana.. */ 
   if (!board.includes('')) {
     isGameOver = true;
-    statusEl.textContent = "It's a draw!";
+    statusEl.textContent = "It's a draw!🤝";
   }
 }
 
 function highlightWinningCells(combo) {
   const cells = document.querySelectorAll('.cell');
-  combo.forEach(i => cells[i].classList.add('winner'));
+  combo.forEach(i => cells[i].classList.add('winner🎉'));
 }
 
 // Initialize
